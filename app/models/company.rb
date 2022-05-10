@@ -1,5 +1,5 @@
 class Company < ApplicationRecord
-  has_many :departments, dependent: :destroy
+  has_many :departments, inverse_of: :company, dependent: :destroy
   has_many :users, through: :departments
 
   has_many :profiles, through: :users
