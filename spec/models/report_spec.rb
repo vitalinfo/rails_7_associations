@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Report, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { build(:report) }
+
+  it { is_expected.to be_valid }
 end

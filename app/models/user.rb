@@ -4,4 +4,5 @@ class User < ApplicationRecord
 
   has_many :departments
   has_many :reports
+  has_many :feedbacks
 end
