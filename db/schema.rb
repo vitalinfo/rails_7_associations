@@ -10,19 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_10_103436) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_10_105026) do
   create_table "companies", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "departments", force: :cascade do |t|
-    t.integer "company_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_departments_on_user_id"
   end
 
   create_table "feedbacks", force: :cascade do |t|
@@ -31,6 +23,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_10_103436) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_feedbacks_on_user_id"
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.integer "company_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id", "user_id"], name: "index_memberships_on_company_id_and_user_id", unique: true
+    t.index ["user_id"], name: "index_memberships_on_user_id"
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -54,7 +55,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_10_103436) do
     t.boolean "dnd", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index "\"company_id\", \"user_id\"", name: "index_user_settings_on_company_id_and_user_id", unique: true
     t.index ["user_id"], name: "index_user_settings_on_user_id", unique: true
   end
 
@@ -62,11 +62,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_10_103436) do
     t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "type", null: false
   end
 
-  add_foreign_key "departments", "companies"
-  add_foreign_key "departments", "users"
   add_foreign_key "feedbacks", "users"
+  add_foreign_key "memberships", "companies"
+  add_foreign_key "memberships", "users"
   add_foreign_key "profiles", "users"
   add_foreign_key "reports", "users"
   add_foreign_key "user_settings", "users"

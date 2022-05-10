@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :feedback do
-    user
+    user { create(:user_simple) }
     message { Faker::Lorem.sentence }
   end
 end

@@ -7,4 +7,7 @@ FactoryBot.define do
       user.user_setting = build(:user_setting, user: user) if user.user_setting.blank?
     end
   end
+
+  factory :user_simple, parent: :user, class: 'User::Simple' do
+  end
 end

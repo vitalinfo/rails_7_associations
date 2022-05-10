@@ -1,6 +1,6 @@
 FactoryBot.define do
-  factory :report do
+  factory :membership do
+    company
     user { create(:user_simple) }
-    name { Faker::Company.name }
   end
 end

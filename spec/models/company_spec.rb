@@ -12,7 +12,7 @@ RSpec.describe Company, type: :model do
     let(:count) { Faker::Number.non_zero_digit }
 
     before do
-      create_list :department, count, company: company
+      create_list :membership, count, company: company
 
       company.users.each do |user|
         create_list :report, count, user: user
