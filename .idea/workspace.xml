@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="095da3c5-0c82-4ca2-b3be-f7655f2a6ec0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/user/simple.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/company.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/company.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/department.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/membership.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/feedback.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/feedback.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/profile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/profile.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/report.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/report.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220510092337_create_departments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220510092337_create_memberships.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/departments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/memberships.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/feedbacks.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/feedbacks.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/profiles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/profiles.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/reports.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/reports.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/user_settings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/user_settings.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/company_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/company_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/department_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/membership_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
-    </list>
+    <list default="true" id="095da3c5-0c82-4ca2-b3be-f7655f2a6ec0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -53,7 +32,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Ruby" value="1314" />
+          <entry key="Ruby" value="1316" />
         </counts>
       </usages-collector>
     </session>
@@ -69,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/company_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -78,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/membership.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="34">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -211,11 +190,11 @@
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/department.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20220510092337_create_memberships.rb" />
-        <option value="$PROJECT_DIR$/app/models/membership.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/factories/memberships.rb" />
         <option value="$PROJECT_DIR$/spec/models/membership_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/company_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/membership.rb" />
       </list>
     </option>
   </component>
@@ -447,12 +426,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652173903251</updated>
-      <workItem from="1652173904874" duration="3765000" />
+      <workItem from="1652173904874" duration="3850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3765000" />
+    <option name="totallyTimeSpent" value="3850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="943" extended-state="6" />
@@ -713,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/membership.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="789">
@@ -745,6 +717,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/membership.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
